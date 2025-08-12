@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    
+}
+
+.main {
+    background-image: url(images/bg.jpg);
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    fill: #e50914;
+    height: 2.5rem;
+    width: 9.25rem;
+
+}
+
+.box {
+    background-color: black;
+    height: 100%;
+    Width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.74;
+    z-index: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    top: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.sign-in {
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 900;
+    padding: 0.375rem 1rem;
+    border-radius: 0.25rem;
+}
+
+select {
+    padding-top: 0.375rem;
+    padding-right: calc(2.25rem + 0rem);
+    padding-bottom: 0.375rem;
+    padding-left: calc(0.625rem + 1rem + 0.5rem);
+    background-color: transparent;
+    color: white;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 900;
+}
+
+.side-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero {
+    color: white;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    Width: 100%;
+    text-align: center;
+    z-index: 1;
+    font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+
+h1 {
+    font-size: clamp(2rem, 2vw, 5rem);
+    font-weight: 900;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+span {
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 12px;
+}
+
+.center-buttons {
+    position: relative;
+    top: 10px;
+    gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    background-color: transparent;
+    color: white;
+    height: 6vh;
+    width: clamp(200px, 22.4vw, 500px);
+    border: 1px solid gray;
+    border-radius: 0.25rem;
+}
+
+.button-gs {
+    background: red;
+    color: white;
+    padding: 0 1rem;
+    border: 1px solid gray;
+    font-size: 1.05rem;
+    font-weight: 900;
+    height: 6vh;
+    border-radius: 0.25rem;
+}
+
+.button-curve {
+    border: 4px solid red;
+    border-radius: 100% 100% 0px 0px;
+    height: 100px;
+    width: 100%;
+    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.card-container {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    overflow:hidden;
+
+}
+
+.main-card {
+    width: clamp(120px, 15vw, 200px);
+    aspect-ratio: 2/3;
+    border-radius: 7px;
+    position:relative;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+    display: flex;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.main-card:hover {
+    transform: scale(1.05);
+}
+
+.card-wrapper {
+    position: relative;
+}
+
+.scroll-btn {
+    background:rgb(110, 106, 106);
+    color: rgba(255, 255, 255, 0.7);
+    height: 7.5rem;
+    width: 1.5rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-indeX: 1;
+}
+
+.scroll-btn.left {
+    left: 0;
+}
+
+.scroll-btn.right {
+    right: 0;
+}
+
+.responsive-wrapper {
+    width: clamp(400px, 75vw, 1100px);
+    margin: 0 auto;
+}
+
+.info-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+
+}
+
+.info-card {
+    background: linear-gradient(149deg, #192247 0%, #210e17 99.08%);
+    color: white;
+    flex:1 1 14.25;
+    height: clamp(130px, 25vh, 300px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3 ease;
+    position: relative;
+    padding:24px 24px 96px 24px;
+    border-radius: 17px;
+    width:100%;
+}
+.faq-section{
+    width:100%;
+    margin:3rem auto;
+    padding:0 20px;
+    background-color: black;
+}
+.faq-title{
+    color:white;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.faq-item{
+    background-color: rgb(51,48,48);
+    margin-bottom: 0.5rem;
+}
+.faq-question{
+    width: 100%;
+    background-color: rgb(51,48,48);
+    color:white;
+    font-size: 1.2rem;
+    text-align: left;
+    padding: 1.5rem;
+    cursor: pointer;
+    font-weight: 500;
+    position: relative;
+} 
+
+.faq-answer{
+    background-color: rgb(51,48,48);
+    color: white;
+    font-size: 1rem;
+    display: none;
+    margin:20px;
+}
+.faq-question::after{
+    content:"+";
+    font-size:1.5rem;
+    position:absolute;
+    right:20px;
+    top:50%;
+    transform: translateY(-50%);
+}
